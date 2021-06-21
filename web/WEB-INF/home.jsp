@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,8 +14,9 @@
     </head>
     <body>
         <h1>Home Page</h1>
-        <p>Hello</p>
-        <%--<a href="note?edit">Edit</a>--%>
-        <a href>Log out</a>
+        <form method="POST" action="home">
+            <h3>Hello ${username}.</h3>
+            <a href="login?logout">Log out</a>
+        </form>
     </body>
 </html>
